@@ -1,3 +1,7 @@
+--- 
+import '@fontsource/ibm-plex-mono';
+import './index.css';
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,20 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>my personal website</title>
-    <link rel="stylesheet" href = "src/styles/index.css">
   </head>
 
         
   <body>
-        <header></header>
     <div class = "main-container">
+      <div class = "landing-page-text-container">
+        <h1>Ragav Srinivasan</h1>
+        <p>Aspiring Software Engineer</p>
+      </div>
       <div class = "navbar">
         <ul>
-          <li><a href = "src/pages/about.astro">About</a></li>
-          <li><a href = "src/pages/blog.astro">Blog</a></li>
-          <li><a href = "src/pages/projects.astro">Projects</a></li>
+          <li><a href = "/about">About</a></li>
+          <li><a href = "/blog">Blog</a></li>
+          <li><a href = "/projects">Projects</a></li>
         </ul>
-        <div class = "socials">
+
           <svg class = "github"  xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
           <svg class = "linkedin" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 1200 1200" xml:space="preserve">
             <path d="M0 0v1200h1200V0H0zm294.287 235.913c47.53.535 94.35 33.325 96.387 90.088 1.016 50.475-42.971 88.921-97.632 90.088h-1.318c-47.057-.543-93.012-34.156-95.142-90.088.671-49.913 42.627-88.904 97.705-90.088zM804.199 474.39c52.255.324 101.572 15.826 142.09 57.13 42.106 46.96 55.624 111.71 57.129 177.538v299.414H830.859V729.419c-.384-52.302-18.3-115.877-87.524-117.993-40.571.432-69.18 24.007-88.77 63.428-5.348 12.688-6.118 27.273-6.372 41.821v291.797H475.708c.66-145.877 1.567-291.743 1.245-437.622 0-41.438-.399-69.34-1.245-83.716h172.485v73.535c14.641-20.823 30.879-40.571 52.66-56.47 29.545-21.085 65.036-29.168 103.346-29.809zm-597.436 12.744h172.485v521.338H206.763V487.134z"/>
@@ -34,11 +40,6 @@
             <path d="m18 3.926-8 7.027-8-7.037V2h16v1.926ZM2 18V6.58l8 7.035 8-7.027V18H2Zm-2 2h20V0H0v20Z"  fill-rule="evenodd"/>
           </svg>
         </div>        
-        </div>
-        <div class = "landing-page-text-container">
-          <p>G'day, I'm Ragav Srinivasan</p>
-          <p>Welcome to my cozy little corner on the internet!</p>
-        </div>
     </div>
     <div class = "version-container">
       <svg class = "git-branch" width="48px" height="48px" viewBox="0 0 15 15"  xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +47,6 @@
       </svg>
       <p>v0.0.5</p> 
     </div>
-        <footer></footer>
   </body>
 
 </html>
