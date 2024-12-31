@@ -39,6 +39,132 @@ body {
   height: 100%;
 }
 
+math-svg {
+  fill: var(--mocha_blue);
+}
 h1 {
+  color: var(--mocha_mauve);
+  font-weight: bolder;
+  font-size: 48px;
 }
 
+li {
+  font-weight: bold;
+  font-size: 3em;
+}
+li:nth-of-type(1) {
+  color: var(--mocha_blue);
+  list-style-image: url("src/assets/math.svg");
+}
+li:nth-of-type(2) {
+  color: var(--mocha_sapphire);
+}
+li:nth-of-type(3) {
+  color: var(--mocha_sky);
+}
+
+li:nth-of-type(4) {
+  color: var(--mocha_teal);
+}
+
+li:nth-of-type(5) {
+  color: var(--mocha_green);
+}
+
+li:nth-of-type(6) {
+  color: var(--mocha_yellow);
+}
+
+li:nth-of-type(7) {
+  color: var(--mocha_peach);
+}
+
+li:nth-of-type(8) {
+  color: var(--mocha_maroon);
+}
+
+li:nth-of-type(9) {
+  color: var(--mocha_red);
+}
+
+.categories-container {
+  font-size: 2em;
+}
+
+.icon {
+  display: inline-flex;
+  align-self: center;
+  gap: 10px;
+}
+
+.icon svg {
+  width: 1em;
+  height: 1em;
+}
+
+.icon.baseline {
+  top: 0.125em;
+  position: relative;
+}
+.math-container .icon svg path {
+  fill: var(--mocha_blue);
+}
+.math-container h1 {
+  color: var(--mocha_blue);
+}
+
+.computing-container .icon svg {
+  fill: var(--mocha_sapphire);
+}
+.computing-container h1 {
+  color: var(--mocha_sapphire);
+}
+
+.books-container .icon svg {
+  fill: var(--mocha_sky);
+}
+.books-container h1 {
+  color: var(--mocha_sky);
+}
+.music-container .icon svg path {
+  stroke: var(--mocha_teal);
+}
+.music-container h1 {
+  color: var(--mocha_teal);
+}
+
+.nature-container .icon svg path {
+  stroke: var(--mocha_green);
+}
+.nature-container h1 {
+  color: var(--mocha_green);
+}
+
+.food-container .icon svg path {
+  fill: var(--mocha_yellow);
+  stroke: var(--mocha_yellow);
+}
+.food-container h1 {
+  color: var(--mocha_yellow);
+}
+
+.travel-container .icon svg path {
+  stroke: var(--mocha_peach);
+}
+.travel-container h1 {
+  color: var(--mocha_peach);
+}
+
+.productivity-container .icon svg path {
+  stroke: var(--mocha_maroon);
+}
+.productivity-container h1 {
+  color: var(--mocha_maroon);
+}
+
+.tech-container .icon svg path {
+  fill: var(--mocha_red);
+}
+.tech-container h1 {
+  color: var(--mocha_red);
+}
