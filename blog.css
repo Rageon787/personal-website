@@ -37,64 +37,39 @@ body {
   background-color: #181825;
   font-family: "IBM Plex Mono", monspace;
   height: 100%;
+  position: relative;
 }
 
-math-svg {
-  fill: var(--mocha_blue);
+.content {
+  display: flex;
+  width: 80%;
+  height: 60%;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  justify-content: space-between;
 }
 h1 {
   color: var(--mocha_mauve);
   font-weight: bolder;
-  font-size: 48px;
+  font-size: 32px;
+  margin: 0;
 }
 
-li {
-  font-weight: bold;
-  font-size: 3em;
+.category-section {
+  width: 50%;
 }
-li:nth-of-type(1) {
-  color: var(--mocha_blue);
-  list-style-image: url("src/assets/math.svg");
+.category-section > h1 {
+  margin-bottom: 1em;
 }
-li:nth-of-type(2) {
-  color: var(--mocha_sapphire);
-}
-li:nth-of-type(3) {
-  color: var(--mocha_sky);
-}
-
-li:nth-of-type(4) {
-  color: var(--mocha_teal);
-}
-
-li:nth-of-type(5) {
-  color: var(--mocha_green);
-}
-
-li:nth-of-type(6) {
-  color: var(--mocha_yellow);
-}
-
-li:nth-of-type(7) {
-  color: var(--mocha_peach);
-}
-
-li:nth-of-type(8) {
-  color: var(--mocha_maroon);
-}
-
-li:nth-of-type(9) {
-  color: var(--mocha_red);
-}
-
 .categories-container {
-  font-size: 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 .icon {
   display: inline-flex;
   align-self: center;
-  gap: 10px;
 }
 
 .icon svg {
@@ -106,6 +81,11 @@ li:nth-of-type(9) {
   top: 0.125em;
   position: relative;
 }
+
+.category-container h1 {
+  font-size: 1.5em;
+}
+
 .math-container .icon svg path {
   fill: var(--mocha_blue);
 }
@@ -113,6 +93,9 @@ li:nth-of-type(9) {
   color: var(--mocha_blue);
 }
 
+.computing-container {
+  margin-top: 0;
+}
 .computing-container .icon svg {
   fill: var(--mocha_sapphire);
 }
@@ -135,6 +118,7 @@ li:nth-of-type(9) {
 
 .nature-container .icon svg path {
   stroke: var(--mocha_green);
+  fill: none;
 }
 .nature-container h1 {
   color: var(--mocha_green);
@@ -150,6 +134,7 @@ li:nth-of-type(9) {
 
 .travel-container .icon svg path {
   stroke: var(--mocha_peach);
+  fill: none;
 }
 .travel-container h1 {
   color: var(--mocha_peach);
@@ -157,6 +142,7 @@ li:nth-of-type(9) {
 
 .productivity-container .icon svg path {
   stroke: var(--mocha_maroon);
+  fill: none;
 }
 .productivity-container h1 {
   color: var(--mocha_maroon);
@@ -167,4 +153,11 @@ li:nth-of-type(9) {
 }
 .tech-container h1 {
   color: var(--mocha_red);
+}
+
+.recent-posts-section {
+  width: 50%;
+}
+.recent-posts-section > h1 {
+  color: var(--mocha_green);
 }
