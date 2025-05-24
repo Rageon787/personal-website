@@ -1,0 +1,45 @@
+@import "tailwindcss";
+:root {
+    --mocha_rosewater: rgb(245, 224, 220);
+    --mocha_flamingo: rgb(242, 205, 205);
+    --mocha_pink: rgb(245, 194, 231);
+    --mocha_mauve: rgb(203, 166, 247);
+    --mocha_red: rgb(243, 139, 168);
+    --mocha_maroon: rgb(235, 160, 172);
+    --mocha_peach: rgb(250, 179, 135);
+    --mocha_yellow: rgb(249, 226, 175);
+    --mocha_green: rgb(166, 227, 161);
+    --mocha_teal: rgb(148, 226, 213);
+    --mocha_sky: rgb(137, 220, 235);
+    --mocha_sapphire: rgb(116, 199, 236);
+    --mocha_blue: rgb(137, 180, 250);
+    --mocha_lavender: rgb(180, 190, 254);
+    --mocha_text: rgb(205, 214, 244);
+    --mocha_subtext1: rgb(186, 194, 222);
+    --mocha_subtext0: rgb(166, 173, 200);
+    --mocha_overlay2: rgb(147, 153, 178);
+    --mocha_overlay1: rgb(127, 132, 156);
+    --mocha_overlay0: rgb(108, 112, 134);
+    --mocha_surface2: rgb(88, 91, 112);
+    --mocha_surface1: rgb(69, 71, 90);
+    --mocha_surface0: rgb(49, 50, 68);
+    --mocha_base: rgb(30, 30, 46);
+    --mocha_mantle: rgb(24, 24, 37);
+    --mocha_crust: rgb(17, 17, 27);
+
+    /* Frappe */
+
+    /* Macchiato */
+}
+
+
+html, body {
+    background-color: var(--mocha_base);
+    font-family: monospace;
+    height: 100%;
+}
+* {
+}
+
+body {
+}
