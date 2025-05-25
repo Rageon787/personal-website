@@ -6,9 +6,9 @@ const {linkToRepo} = Astro.props;
 ---
 <div>
 	<div class="flex flex-row gap-2">
-		<h2 class = "text-2xl text-(--mocha_text) font-light">
+		<a href={linkToRepo}><h2 class = "text-2xl text-(--mocha_text) font-light">
 			{title}
-		</h2>
+		</h2></a>
 		<Github width={"22px"} height={"auto"} linkToRepo={linkToRepo} />
 	</div>
     <p class = "text-(--mocha_overlay2)">
