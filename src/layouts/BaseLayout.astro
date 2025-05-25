@@ -9,25 +9,25 @@ const { title } = Astro.props;
         <title>{title}</title>
     </head>
 
-    <body>
-        <h1 class="">Ragav Srinivasan</h1>
-		<h1>{title}</h1>
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Blog</a>
-        </nav>
+    <body class="flex justify-center">
+        <div class="w-3xl">
+            <div class = "m-8">
+                <h1 class = "text-(--mocha_mauve) heading">Ragav Srinivasan</h1>
+                <nav class="text-2xl">
+                    <a href="/about/" class="text-(--mocha_red)">/about</a>
+                    <a href="/projects/" class = "text-(--mocha_green)">/projects</a>
+                    <a href="/blog/" class = "text-(--mocha_blue)">/blog</a>
+                </nav>
+
+            <!--<h1>{title}</h1>-->
 
 
-        <article>
-            <slot /> <!-- your content is injected here -->
-        </article>
+                <article>
+                    <slot /> <!-- your content is injected here -->
+                </article>
+            </div>
+        </div>
     </body>
 
-    <style>
-        h1 {
-            font-size: 2rem;
-        }
-    </style>
 
 </html>

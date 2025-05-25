@@ -1,5 +1,18 @@
 @import "tailwindcss";
-:root {
+/* Normal fonts */
+@import '@fontsource/ibm-plex-mono/100.css';
+@import '@fontsource/ibm-plex-mono/200.css';
+@import '@fontsource/ibm-plex-mono/300.css';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/ibm-plex-mono/600.css';
+@import '@fontsource/ibm-plex-mono/700.css';
+
+/* Italic fonts */
+@import '@fontsource/ibm-plex-mono/300-italic.css';
+@import '@fontsource/ibm-plex-mono/100-italic.css';
+@theme {
+
     --mocha_rosewater: rgb(245, 224, 220);
     --mocha_flamingo: rgb(242, 205, 205);
     --mocha_pink: rgb(245, 194, 231);
@@ -33,13 +46,19 @@
 }
 
 
+
 html, body {
     background-color: var(--mocha_base);
-    font-family: monospace;
+    font-family: "IBM Plex Mono", monospace;
     height: 100%;
 }
-* {
-}
 
-body {
+
+
+
+.heading {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 48px;
+    font-weight: 300;
+    font-style: italic;
 }
